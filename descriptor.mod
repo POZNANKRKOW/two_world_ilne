@@ -7,5 +7,6 @@ tags={
 	"Fixes"
 	"Balance"
 }
+picture="thumbnail.png"
 name="Two World Line"
 supported_version="1.16.*"
