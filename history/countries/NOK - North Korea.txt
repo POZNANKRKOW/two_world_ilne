@@ -1,0 +1,16 @@
+﻿capital = 1021 # Nanjing
+
+set_research_slots = 2
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1930.12.31"
+	election_frequency = 60
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 2
+	neutrality = 0
+	communism = 98
+	fascism = 0
+}

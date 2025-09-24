@@ -1,0 +1,28 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_goal_KOR_martial_law"
+        texturefile = "gfx/interface/goals/image-6.dds"
+    }
+}
+spriteTypes = {
+
+    spriteType = {
+        name = "GFX_idea_kor_idea_ideology_chaos"
+        texturefile = "gfx/interface/ideas/idea_ideology_chaos.dds"
+    }
+}
+
+spriteTypes = {
+
+    spriteType = {
+        name = "GFX_idea_kor_idea_ideology_chaos"
+        texturefile = "gfx/interface/ideas/idea_ideology_chaos.dds"
+    }
+}
+spriteTypes = {
+    spriteType = {
+        name = "GFX_goal_KOR_impeachment_protest"
+        texturefile = "gfx/interface/goals/image2.dds"
+    }
+}
+

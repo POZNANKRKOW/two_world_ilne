@@ -1,0 +1,86 @@
+ideas = {
+    country = {
+
+        # 양극화된 정치
+        KOR_polarized_politics_extreme = {
+            allowed = { original_tag = KOR }
+            allowed_civil_war = { always = yes }
+            picture = RAJ_partition_india_united
+            modifier = {
+                stability_factor = -0.10
+                political_power_gain = -0.15
+                surrender_limit = -0.10
+                political_advisor_cost_factor = 0.33
+                economy_cost_factor = 0.33
+            }
+        }
+
+        # 노동조합의 힘
+        KOR_union_power_strong = {
+            allowed = { original_tag = KOR }
+            allowed_civil_war = { always = yes }
+            picture = SPR_international_brigades
+            modifier = {
+                conscription_factor = -0.15
+                stability_factor = -0.10
+                industrial_capacity_factory = -0.1
+                industrial_capacity_dockyard = -0.1
+            }
+        }
+
+        # 침체되어가는 경제
+        KOR_economy_decline = {
+            allowed = { original_tag = KOR }
+            allowed_civil_war = { always = yes }
+            picture = generic_economic_crisis
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.05
+				production_factory_max_efficiency_factor = -0.05
+				consumer_goods_factor = 0.10
+				production_speed_industrial_complex_factor = -0.05
+            }
+        }
+
+        # 많은 개발도상국들의 우상
+        KOR_model_for_developing_countries = {
+            allowed = { original_tag = KOR }
+            allowed_civil_war = { always = yes }
+            picture = GER_wirtschaftswunder
+            modifier = {
+                stability_factor = 0.05
+                consumer_goods_factor = -0.05
+                industrial_capacity_factory = 0.05
+                research_speed_factor = 0.05
+                production_speed_industrial_complex_factor = 0.05
+            }
+        }
+        KOR_education_overdevelopment = {
+            allowed = { original_tag = KOR }
+            allowed_civil_war = { always = yes }
+            picture = jap_supremacy_of_technology
+            modifier = {
+                stability_factor = -0.05
+                consumer_goods_factor = 0.05
+                research_speed_factor = 0.15
+            }
+        }
+        KOR_high_defense_budget = {
+        
+            allowed = {
+                original_tag = KOR        # 한국 전용
+            }
+
+            allowed_civil_war = {
+                always = yes              # 내전 시에도 유지 가능
+            }
+
+            picture = GER_aufrustung  # 아이콘 (커스텀 가능)
+            
+            modifier = {
+                production_speed_arms_factory_factor = 0.1 # 소비재 공장 변동치 +10%
+                war_support_factor = 0.05                     # 전쟁 지지도 +5%
+                consumer_goods_factor= 0.05  # 군수공장 건설 속도 +50%
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_portrait_Sukyeol_yoon"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Sukyeol_yoon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_Sukyeol_yoon_not"
+		texturefile = "gfx/leaders/KOR/image-8.dds"
+	}
+}

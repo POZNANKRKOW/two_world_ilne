@@ -1,0 +1,5 @@
+KJP = "countries/Korean Japan.txt"
+NOK = "countries/North Korea.txt"
+RKY = "countries/Ryukyu.txt"
+ANU = "countries/Ainu.txt"
+TWN = "countries/Taiwan.txt"

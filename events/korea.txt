@@ -1,0 +1,329 @@
+add_namespace = kor_events
+
+# HoK_intro
+country_event = {
+	id = kor_events.0
+	title = kor_events.0.t
+	desc = kor_events.0.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kor_events.0.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+country_event = {
+	id = kor_events.1
+	title = kor_events.1.t
+	desc = kor_events.1.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kor_events.1.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+country_event = {
+	id = kor_events.2
+	title = kor_events.2.t
+	desc = kor_events.2.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kor_events.2.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+country_event = {
+	id = kor_events.3
+	title = kor_events.3.t
+	desc = kor_events.3.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kor_events.3.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+country_event = {
+	id = kor_events.4
+	title = kor_events.4.t
+	desc = kor_events.4.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kor_events.4.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+country_event = {
+	id = kor_events.5
+	title = kor_events.5.t
+	desc = kor_events.5.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kor_events.5.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+country_event = {
+	id = kor_events.6
+	title = kor_events.6.t
+	desc = kor_events.6.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kor_events.6.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+country_event = {
+	id = kor_events.7
+	title = kor_events.7.t
+	desc = kor_events.7.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kor_events.7.a
+		ai_chance = {
+			base = 10
+		}
+		add_stability = 0.03
+	}
+	option = {
+		name = kor_events.7.b
+		ai_chance = {
+			base = 10
+		}
+		add_stability = -0.03
+	}
+}
+country_event = {
+	id = kor_events.8
+	title = kor_events.8.t
+	desc = kor_events.8.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kor_events.8.a
+		ai_chance = {
+			base = 10
+		}
+		add_stability = 0.03
+	}
+}
+country_event = {
+	id = kor_events.9
+	title = kor_events.9.t
+	desc = kor_events.9.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kor_events.9.a
+		ai_chance = {
+			base = 10
+		}
+		add_stability = 0.03
+	}
+}
+country_event = {
+	id = kor_events.10
+	title = kor_events.10.t
+	desc = kor_events.10.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kor_events.10.a
+		ai_chance = {
+			base = 10
+		}
+		add_stability = -0.03
+	}
+	option = {
+		name = kor_events.10.b
+		ai_chance = {
+			base = 10
+		}
+		add_stability = -0.03
+	}
+}
+country_event = {
+	id = kor_events.11
+	title = kor_events.11.t
+	desc = kor_events.11.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kor_events.11.a
+		ai_chance = {
+			base = 10
+		}
+
+	}
+	option = {
+		name = kor_events.11.b
+		ai_chance = {
+			base = 10
+		}
+
+	}
+}
+country_event = {
+	id = kor_events.12
+	title = kor_events.12.t
+	desc = kor_events.12.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kor_events.12.a
+		ai_chance = {
+			base = 10
+		}
+
+	}
+	option = {
+		name = kor_events.12.b
+		ai_chance = {
+			base = 10
+		}
+
+	}
+}
+country_event = {
+	id = kor_events.13
+	title = kor_events.13.t
+	desc = kor_events.13.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kor_events.13.a
+		ai_chance = {
+			base = 10
+		}
+
+	}
+	option = {
+		name = kor_events.13.b
+		ai_chance = {
+			base = 10
+		}
+
+	}
+}
+country_event = {
+	id = kor_events.14
+	title = kor_events.14.t
+	desc = kor_events.14.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kor_events.14.a
+		ai_chance = {
+			base = 10
+		}
+
+	}
+	option = {
+		name = kor_events.14.b
+		ai_chance = {
+			base = 10
+		}
+		
+	}
+}
+country_event = {
+	id = kor_events.15
+	title = kor_events.15.t
+	desc = kor_events.15.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kor_events.15.a
+		ai_chance = {
+			base = 10
+		}
+		add_stability = -0.01
+	}
+	option = {
+		name = kor_events.15.b
+		ai_chance = {
+			base = 10
+		}
+		add_stability = -0.01
+	}
+}
+country_event = {
+	id = kor_events.16
+	title = kor_events.16.t
+	desc = kor_events.16.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kor_events.16.a
+		ai_chance = {
+			base = 10
+		}
+		add_stability = 0.03
+	}
+	option = {
+		name = kor_events.16.b
+		ai_chance = {
+			base = 10
+		}
+		add_stability = -0.03
+	}
+}
+country_event = {
+	id = kor_events.17
+	title = kor_events.17.t
+	desc = kor_events.17.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kor_events.17.a
+		ai_chance = {
+			base = 10
+		}
+		add_stability = 0.03
+	}
+	option = {
+		name = kor_events.17.b
+		ai_chance = {
+			base = 10
+		}
+		add_stability = 0.03
+	}
+}

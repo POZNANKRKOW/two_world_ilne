@@ -1,0 +1,332 @@
+focus_tree = {
+    id = KOR_focus_tree
+    country = {
+        factor = 0
+        modifier = {
+            add = 50
+            tag = KOR
+        }
+    }
+    default = no
+    continuous_focus_position = { x = 50 y = 2500 }
+    initial_show_position = { x = 38 y = 0 }
+
+
+    focus = {
+        id = KOR_martial_law
+        icon = GFX_goal_KOR_martial_law
+        cost = 1
+        x = 0
+        y = 0
+        completion_reward = {
+            add_political_power = 50
+            country_event = { id = kor_events.0 }
+            add_stability = -0.1
+        }
+    }
+
+    focus = {
+        id = KOR_martial_law_repeal
+        icon = GFX_focus_AFG_pashtunistan_referendum
+        prerequisite = { focus = KOR_martial_law }
+        cost = 5
+        x = 0
+        y = 1
+        completion_reward = {
+            add_political_power = 30
+            country_event = { id = kor_events.1 }
+            add_stability = 0.05
+        }
+    }
+    #가결
+    focus = { 
+        id = KOR_Passed
+        icon = GFX_goal_KOR_pass
+        prerequisite = { focus = KOR_martial_law_repeal }
+        mutually_exclusive = { focus = KOR_rejected }
+        cost = 3
+        x = -9
+        y = 2
+        
+        completion_reward = {
+			
+            country_event = { id = kor_events.2 }
+            add_stability = 0.1
+            hidden_effect = {
+				promote_character = KOR_Sukyeol_yoon_ruined_dream
+			}
+		}
+    }
+    focus = {
+        id = KOR_impeachment_protest
+        icon = GFX_goal_KOR_impeachment_protest 
+        prerequisite = {  focus =  KOR_Passed }
+        relative_position_id = KOR_Passed
+        cost = 3
+        x = 0
+        y = 1
+        completion_reward = {
+            add_stability = -0.1
+        }
+    }
+    focus = {
+        id = KOR_Hammer_and_sickle
+        icon = GFX_goal_KOR_Hammer_and_sickle
+        prerequisite = { focus = KOR_impeachment_protest }
+        relative_position_id = KOR_impeachment_protest
+        cost = 5
+        x= -1
+        y = 1
+        completion_reward = {
+             
+             country_event = { id = kor_events.7 }
+        }
+    }
+    focus = {
+        id = KOR_violent_protest
+        icon = GFX_goal_KOR_violent_protest
+        prerequisite = { focus = KOR_impeachment_protest }
+        relative_position_id = KOR_impeachment_protest
+        cost = 5
+        x= 1
+        y = 1
+        completion_reward = {
+             add_stability = -0.02
+             country_event = { id = kor_events.9 }
+        }
+    }
+    #좌파 루트
+    focus = {
+        id = KOR_protest_candle
+        icon = GFX_goal_KOR_protest_candle
+        prerequisite = { focus = KOR_violent_protest focus = KOR_Hammer_and_sickle }
+        relative_position_id = KOR_violent_protest
+        cost = 5
+        x= 2
+        y = 1
+        completion_reward = {
+            country_event = { id = kor_events.10 }
+        }
+    }
+    focus = {
+        id = KOR_KCOTU
+        icon = GFX_goal_KOR_KCOTU
+        prerequisite = {focus = KOR_protest_candle  }
+        relative_position_id = KOR_protest_candle
+        cost = 5
+        x= -1
+        y = 1
+        completion_reward = {
+            country_event = { id = kor_events.12 }
+        }
+    }
+    focus = {
+        id = KOR_KTEWU
+        icon = GFX_goal_KOR_KTEWU
+        prerequisite = {focus = KOR_protest_candle  }
+        relative_position_id = KOR_protest_candle
+        cost = 5
+        x= 1
+        y = 1
+        completion_reward = {
+            country_event = { id = kor_events.13 }
+        }
+    }
+    focus = {
+        id = KOR_DPOK
+        icon = GFX_goal_KOR_DPOK
+        prerequisite = {focus =  KOR_KTEWU focus = KOR_KCOTU }
+        relative_position_id = KOR_KTEWU
+        cost = 5
+        x= -1
+        y = 1
+        completion_reward = {
+            country_event = { id = kor_events.14 }
+        }
+    }
+    #우파 반격
+    focus = {
+        id = KOR_the_rightwing_counterattack
+        icon = GFX_goal_KOR_rightwing_counterattack
+        prerequisite = { focus = KOR_violent_protest focus = KOR_Hammer_and_sickle }
+        relative_position_id = KOR_impeachment_protest
+        cost = 5
+        x= -3
+        y = 2
+        completion_reward = {
+            country_event = { id = kor_events.4 }
+        }
+    }
+    focus = {
+        id = KOR_Gwanghwamun_rally
+        icon = GFX_goal_KOR_Gwanghwamun_rally
+        prerequisite = { focus = KOR_the_rightwing_counterattack }
+        relative_position_id = KOR_the_rightwing_counterattack
+        cost = 5
+        x= 1
+        y = 1
+        completion_reward = {
+            country_event = { id = kor_events.6 }
+        }
+    }
+    focus = {
+        id = KOR_expanding_the_theory_of_election_fraud
+        icon = GFX_goal_KOR_theory_of_election_fraud
+        prerequisite = { focus = KOR_the_rightwing_counterattack }
+        relative_position_id = KOR_the_rightwing_counterattack
+        cost = 5
+        x= -1
+        y = 1
+        completion_reward = {
+            country_event = { id = kor_events.8 }
+        }
+    }
+    focus = {
+        id = KOR_2030
+        icon = GFX_goal_KOR_2030
+        prerequisite = { focus = KOR_expanding_the_theory_of_election_fraud focus = KOR_Gwanghwamun_rally  }
+        relative_position_id = KOR_expanding_the_theory_of_election_fraud
+        cost = 5
+        x= 1
+        y = 1
+        completion_reward = {
+            country_event = { id = kor_events.5 }
+        }
+    }
+    #중앙
+    focus = {
+        id = KOR_MND
+        icon = GFX_goal_KOR_MND
+        prerequisite = { focus = KOR_violent_protest focus = KOR_Hammer_and_sickle  }
+        relative_position_id = KOR_impeachment_protest
+        cost = 5
+        x= 0
+        y = 2
+        completion_reward = {
+            country_event = { id = kor_events.11 }
+        }
+    }
+    focus = {
+        id = KOR_the_truth_of_that_day
+        icon = GFX_goal_KOR_the_truth_of_that_day
+        prerequisite = { focus = KOR_MND  }
+        relative_position_id = KOR_MND
+        cost = 5
+        x= 0
+        y = 1
+        completion_reward = {
+            country_event = { id = kor_events.15 }
+        }
+    }
+    focus = {
+        id = KOR_expansion_of_martial_law_investigation
+        icon = GFX_goal_KOR_expansion_of_martial_law_investigation
+        prerequisite = { focus = KOR_the_truth_of_that_day  }
+        relative_position_id = KOR_the_truth_of_that_day
+        cost = 5
+        x= 0
+        y = 1
+        completion_reward = {
+            country_event = { id = kor_events.16 }
+        }
+    } 
+    #탄핵 소추
+    focus = {
+        id = KOR_impeachment
+        icon = GFX_goal_KOR_impeachment
+        prerequisite = { focus = KOR_expansion_of_martial_law_investigation  }
+        prerequisite = { focus = KOR_2030  }
+        prerequisite = { focus = KOR_DPOK  }
+        relative_position_id = KOR_expansion_of_martial_law_investigation
+        cost = 10
+        x= 0
+        y = 1
+        completion_reward = {
+            country_event = { id = kor_events.17 }
+        }
+    }
+    focus = {
+        id = KOR_members_of_parliament_exiting_the_assembly
+        icon = GFX_goal_KOR_impeachment
+        prerequisite = { focus = KOR_impeachment  }
+
+        relative_position_id = KOR_expansion_of_martial_law_investigation
+        cost = 5
+        x= 0
+        y = 2
+        completion_reward = {
+            country_event = { id = kor_events.17 }
+        }
+    }
+    focus = {
+        id = KOR_to_placate_Han_Donghoon
+        icon = GFX_goal_KOR_to_placate_Han_Donghoon
+        prerequisite = { focus = KOR_members_of_parliament_exiting_the_assembly  }
+        mutually_exclusive = { focus = KOR_to_placate_Ahn_Cheolsoo }
+        relative_position_id = KOR_members_of_parliament_exiting_the_assembly
+        cost = 5
+        x= -3
+        y = 1
+        completion_reward = {
+            country_event = { id = kor_events.17 }
+        }
+    }
+    focus = {
+        id = KOR_to_placate_Ahn_Cheolsoo
+        icon = GFX_goal_KOR_to_placate_Ahn_Cheolsoo
+        prerequisite = { focus = KOR_members_of_parliament_exiting_the_assembly  }
+        mutually_exclusive = { focus = KOR_to_placate_Han_Donghoon }
+        relative_position_id = KOR_members_of_parliament_exiting_the_assembly
+        cost = 5
+        x= 3
+        y = 1
+        completion_reward = {
+            country_event = { id = kor_events.17 }
+        }
+    }
+    focus = {
+        id = KOR_the_second_motion_for_impeachment
+        icon = GFX_goal_KOR_impeachment
+        prerequisite = { focus = KOR_to_placate_Han_Donghoon focus = KOR_to_placate_Ahn_Cheolsoo }
+        
+        prerequisite = {focus = KOR_to_placate_Han_Donghoonfocus = KOR_to_placate_Ahn_Cheolsoo}
+
+        relative_position_id = KOR_to_placate_Han_Donghoon
+        cost = 10
+        x= 3
+        y = 1
+        completion_reward = {
+            country_event = { id = kor_events.17 }
+        }
+    }
+    focus = {
+        id = KOR_2024hun-na8
+        icon = GFX_goal_KOR_2024hun_na8
+        prerequisite = { focus = KOR_the_second_motion_for_impeachment }
+        
+       
+        relative_position_id = KOR_the_second_motion_for_impeachment
+        cost = 10
+        x= 0
+        y = 1
+        completion_reward = {
+            country_event = { id = kor_events.17 }
+        }
+    }
+    
+    #부결
+    focus = { 
+        id = KOR_rejected
+        icon = GFX_goal_KOR_rejected
+        prerequisite = { focus = KOR_martial_law_repeal }
+        mutually_exclusive = { focus = KOR_Passed }
+        cost = 3
+        x = 9
+        y = 2
+        completion_reward = {
+            country_event = { id = kor_events.3 }
+        }
+    }    
+
+}
+
