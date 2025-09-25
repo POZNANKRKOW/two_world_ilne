@@ -28,4 +28,46 @@ characters={
 			id=-1
 		}
 	}
+	KOR_Lee_Jae_myung={ #Democratic Leader 3
+		name=KOR_Lee_Jae_myung
+		portraits={
+			civilian={
+				large="GFX_portrait_Lee_Jae_myung"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={ KOR_the_Korean_Bernie_Sanders   }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	KOR_Lee_Jun_seok={ #Democratic Leader 4
+		name=KOR_Lee_Jun_seok
+		portraits={
+			civilian={
+				large="GFX_portrait_Lee_Jun_seok"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={ KOR_youthful_president   }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	KOR_Kim_Moon_soo={ #Democratic Leader 5
+		name=KOR_Kim_Moon_soo
+		portraits={
+			civilian={
+				large="GFX_portrait_Kim_Moon_soo"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={   KOR_Integrity_President }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 }

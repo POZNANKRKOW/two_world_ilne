@@ -9,4 +9,16 @@ spriteTypes = {
 		name = "GFX_portrait_Sukyeol_yoon_not"
 		texturefile = "gfx/leaders/KOR/image-8.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_Lee_Jae_myung"
+		texturefile = "gfx/leaders/KOR/image2.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_Lee_Jun_seok"
+		texturefile = "gfx/leaders/KOR/image3.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_Kim_Moon_soo"
+		texturefile = "gfx/leaders/KOR/image.dds"
+	}
 }

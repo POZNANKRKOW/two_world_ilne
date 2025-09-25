@@ -155,6 +155,9 @@ if = {
 ##Political leader
 recruit_character = KOR_Sukyeol_yoon						#Democratic Leader 1
 recruit_character = KOR_Sukyeol_yoon_ruined_dream
+recruit_character = KOR_Lee_Jae_myung
+recruit_character = KOR_Lee_Jun_seok
+recruit_character = KOR_Kim_Moon_soo
 
 if = {
 	limit = { has_dlc = "La Resistance" }
